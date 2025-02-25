@@ -1,9 +1,13 @@
 "use client";
 import React, { useState } from "react";
-import GithubIcon from "../../../public/github-icon.svg";
 
+import { AiOutlineWechat } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
+import { AiFillZhihuCircle } from "react-icons/ai";
+import { AiOutlineBilibili } from "react-icons/ai";
+import { AiOutlineQq } from "react-icons/ai";
 import Link from "next/link";
-import Image from "next/image";
+
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -30,11 +34,17 @@ const EmailSection = () => {
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="https://github.com/KenoChou">
-            <Image src={GithubIcon} alt="Github Icon" />
+            <AiFillGithub />
           </Link>
 
-       
+          
+            <AiOutlineWechat />
+    
 
+          <AiFillZhihuCircle />
+          <AiOutlineQq/>
+          <AiOutlineBilibili />
+          
         </div>
       </div>
       <div>
